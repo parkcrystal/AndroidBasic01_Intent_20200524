@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="첫번쨰 액티비티"
+        android:text="첫번째 액티비티"
         android:textSize="25sp"
         android:textColor="#000000" />
 
