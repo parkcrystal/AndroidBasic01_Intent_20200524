@@ -53,5 +53,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(myIntent)
 
         }
+
+
+        editNick.setOnClickListener {
+
+
+        }
+
     }
 }
