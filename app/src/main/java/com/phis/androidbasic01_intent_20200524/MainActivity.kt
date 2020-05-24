@@ -1,8 +1,10 @@
 package com.phis.androidbasic01_intent_20200524
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_edit_nick_name.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -61,5 +63,18 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if(requestCode == 1000) {
+            if(resultCode == Activity.RESULT_OK) {
+                val newNickname = data?.getStringExtra("nick")
+                editNick.text = newNickname
+            }
+
+         }
     }
 }
