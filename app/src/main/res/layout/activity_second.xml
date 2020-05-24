@@ -4,21 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:padding="10dp"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:layout_gravity="center"
+    tools:context=".SecondActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="두번째 액티비티"
+        android:textSize="25sp"
+        android:textColor="#000000" />
 
     <Button
-        android:id="@+id/goToFirstBtn"
+        android:id="@+id/goBackBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1번 액티비티로 이동" />
+        android:layout_marginTop="10dp"
+        android:text="돌아가기" />
 
-    <Button
-        android:id="@+id/goToSecondBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="2번 액티비티로 이동" />
 
 </LinearLayout>

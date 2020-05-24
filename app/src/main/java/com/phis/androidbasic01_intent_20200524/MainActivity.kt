@@ -17,6 +17,16 @@ class MainActivity : AppCompatActivity() {
                 Intent(this, FirstActivity::class.java)
                 startActivity(myIntent)
 
+
+        }
+
+//        두번째 액티비티로 버튼을 누르면 이동, 돌아가기 버튼 누르면 메인
+
+        goToSecondBtn.setOnClickListener {
+
+            val myIntent2 = Intent(this, SecondActivity::class.java)
+            startActivity(myIntent2)
+
         }
     }
 }
