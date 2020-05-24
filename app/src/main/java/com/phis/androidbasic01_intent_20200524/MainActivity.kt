@@ -55,8 +55,9 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        editNick.setOnClickListener {
-
+        editNickNameBtn.setOnClickListener {
+            val myIntent = Intent(this, EditNickNameActivity::class.java)
+            startActivityForResult(myIntent, 1000)
 
         }
 
