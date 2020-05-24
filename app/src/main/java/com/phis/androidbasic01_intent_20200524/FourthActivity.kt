@@ -2,20 +2,20 @@ package com.phis.androidbasic01_intent_20200524
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_fourth.*
 import kotlinx.android.synthetic.main.activity_third.*
 
-class ThirdActivity : AppCompatActivity() {
+class FourthActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_third)
+        setContentView(R.layout.activity_fourth)
 
 
-        val myContent = intent.getStringExtra("content")
 
+        val phone = intent.getStringExtra("phone")
 
-        val myNumber = intent.getIntExtra("number",-1)
+        phoneTxt.text = phone
 
-        contentTxt.text = myContent
     }
 }

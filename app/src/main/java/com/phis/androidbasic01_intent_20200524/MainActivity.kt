@@ -33,8 +33,23 @@ class MainActivity : AppCompatActivity() {
 
             var inputContent = contentEdt.text.toString()
 
+
             val myIntent = Intent(this, ThirdActivity::class.java)
             myIntent.putExtra("content", inputContent)
+            myIntent.putExtra("number", 10)
+
+            startActivity(myIntent)
+
+        }
+
+        goToFourthBtn.setOnClickListener {
+
+            var inputPhoneNum = phoneNumEdt.text.toString()
+
+
+            val myIntent = Intent(this, FourthActivity::class.java)
+            myIntent.putExtra("phone", inputPhoneNum)
+
             startActivity(myIntent)
 
         }
